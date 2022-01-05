@@ -1,71 +1,57 @@
-* {border: 1px soli red;}
-
-html {
-    box-sizing: border-bo;
+body, h1, h3, h4, h5, p, a, nav, .information {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
 }
 
-*, *:before, *:after {
-    box-sizing: inheri;
-  }
-
-body {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    margin: 0;
+ section,nav,.title_container,.image,.button,.information,.information div,.blue_div{
+    display: flex;
 }
 
 section {
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
     
-.hero { 
+.hero, footer { 
    background-color: #1f2937;
    color:#f9faf8;
 }
 
 nav {
-    display: flex;
     gap: 20px;
     padding-top: 10px;
-    width: 1000px;
-    margin: auto;
+    width: 76%;
 }
 
 h3 {
     font-size: 24px;
     color:#f9faf8;
     font-weight: 800;
-    margin: auto;
     flex:1;
 }
 
- .hero p,a {
+ .hero p, .blue_div p, a {
     font-size: 18px;
     color: #e5e7eb;
-    margin: 0; 
 }
 
 .title_container {
-    display: flex;
-    width: 1000px;
-    margin: 110px auto;
-    gap: 30px;
+    width:76%;
+    margin: 130px auto;
+    gap: 50px;
 }
 
 h1 {
   font-size: 48px;
   font-weight: 800;
-  margin: auto;
 }
 
  .hero .image {
-    background-color: grey;
-    display: flex;
+    background-color: #6b727e;
     align-items: center;
     justify-content: center;
-    flex: auto;
-    }
+    flex: 1;
+}
 
 .title {
     flex-basis: 45%;
@@ -73,13 +59,13 @@ h1 {
 
 .button {
     background-color: #3882f6;
-    width: 125px;
-    height: 30px;
-    border-radius: 5px;
-    display: flex;
+    width: 130px;
+    height: 37px;
+    border-radius: 7px;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 700;
     margin-top: 10px;
 }
 
@@ -91,25 +77,73 @@ h2 {
 }
 
 .information {
-    display: flex;;
-    width: 830px;
+    width: 63%;
     height:230px;
     gap: 50px;
-    margin: auto;
     margin-bottom: 110px;
+    color: #626874;
+    font-size: 18px;
 }
 
 .information div {
   text-align: center;
-  display: flex;
   flex-direction: column;
-  color: rgb(75, 70, 70);
-
+  gap: 5px;
 }
 
 .information .image {
     border: 4px solid #3882f6;
     border-radius: 15px;
     flex: 1;
-
 }
+
+.quote-section {
+    color: #1f2937;
+    background-color: #e5e7eb;
+    font-size: 36px;
+}
+
+.quote-section div {
+    width: 60%;
+    margin-top: 120px;
+    margin-bottom: 90px;
+}
+
+h4 {
+    text-align: end;
+    margin-right: 40px;
+    font-size: 23px;
+}
+
+.blue_div {
+    color:#f9faf8;
+    background-color: #3882f6;
+    align-items: center;
+    width: 76%;
+    margin: 90px auto;
+    border-radius: 7px;
+}
+
+.blue_div div {
+    margin: 50px auto;
+}
+
+h5 {
+    font-size: 27px;
+}
+
+.blue_div .button {
+    border: 2px solid #f9faf8;
+}
+
+footer{
+    text-align: center;
+    padding: 35px;
+    font-size: 18px;
+}
+
+
+
+
+
+
